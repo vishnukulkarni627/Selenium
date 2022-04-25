@@ -1,0 +1,5 @@
+Locator_Name,Locator_Value
+xpath_search,//input[@name='searchVal']
+xpath_search_button,//button[@type='submit']
+xpath_dropdown,//div[@class='filter-dropdown']/..//select
+xpath_product_elements,//div[@class='contentHolder']
