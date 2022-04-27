@@ -1,9 +1,9 @@
 from selenium.webdriver import Chrome
 from selenium_wrapper import SeleniumWrapper
-def test_registration():
+def test_registration(_driver):
     driver = Chrome("chromedriver.exe")
     driver.get("http://demowebshop.tricentis.com/")
-    s = SeleniumWrapper(driver)
+    s = SeleniumWrapper(_driver)
     s.click_element(("link text", "Register"))
     s.click_element(("id", "gender-male"))
     s.enter_text(("id", "FirstName"), value = "hello")
