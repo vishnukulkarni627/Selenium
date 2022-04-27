@@ -1,6 +1,6 @@
 from selenium.webdriver import Chrome
 from time import sleep
-driver = Chrome('./chromedriver.exe')
+driver = Chrome('../pytestTy/chromedriver.exe')
 driver.get("https://www.flipkart.com/")
 sleep(2)
 driver.maximize_window()

@@ -1,7 +1,7 @@
 from time import sleep
 
 from selenium.webdriver import Chrome
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("https://www.amazon.in/")
 driver.maximize_window()
 driver.find_element_by_xpath("//input[@id='twotabsearchtextbox']").send_keys("mobiles")

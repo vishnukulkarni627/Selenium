@@ -1,5 +1,5 @@
 from selenium.webdriver import Chrome
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("https://www.ajio.com/")
 driver.find_element_by_xpath("//input[@name='searchVal']").send_keys("shoes")
 driver.find_element_by_xpath("//button[@type='submit']").click()

@@ -2,7 +2,7 @@ from time import sleep
 from selenium.webdriver import Chrome
 from selenium.webdriver.common.alert import Alert
 
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get('https://www.monsterindia.com/')
 sleep(2)
 driver.find_element_by_xpath("//button[@class='No thanks']").click()

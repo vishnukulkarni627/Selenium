@@ -1,7 +1,7 @@
 from selenium.webdriver import Chrome
 from time import sleep
 # /session
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("file:///C:/Users/vishn/Downloads/demo-html/xpath.html")
 # Absolute Xpath: This xpath is very tedious to trace. Because traversing is from parent to immediate child
 # In order to overcome this problem we go for relative xpath

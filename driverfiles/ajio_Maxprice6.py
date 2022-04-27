@@ -3,7 +3,7 @@ from selenium.webdriver import Chrome
 from time import sleep
 from selenium.webdriver.support.select import Select
 
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.maximize_window()
 driver.get("https://www.ajio.com/")
 sleep(5)

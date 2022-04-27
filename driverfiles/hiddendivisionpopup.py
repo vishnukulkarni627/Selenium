@@ -1,7 +1,7 @@
 from time import sleep
 from selenium.webdriver import Chrome
 from selenium.common.exceptions import NoSuchElementException
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("https://www.cleartrip.com/flights/")
 sleep(2)
 driver.maximize_window()

@@ -1,7 +1,7 @@
 from time import sleep
 
 from selenium.webdriver import Chrome
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get('http://demowebshop.tricentis.com/')
 links = driver.find_elements_by_xpath("//div[@class='block block-category-navigation']//a")
 

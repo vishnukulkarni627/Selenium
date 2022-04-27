@@ -1,7 +1,7 @@
 from selenium.webdriver import Chrome
 from time import sleep
 # /session
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 sleep(2)
 # /session/{session id}/url -- post request from postman
 driver.get("http://demowebshop.tricentis.com/")

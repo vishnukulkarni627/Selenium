@@ -1,6 +1,6 @@
 from selenium.webdriver import Chrome
 from time import sleep
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("file:///C:/Users/vishn/Downloads/demo-html/demo.html")
 sleep(5)
 # driver.find_element_by_link_text("Inbox(100)").click()

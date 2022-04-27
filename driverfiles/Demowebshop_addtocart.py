@@ -1,7 +1,7 @@
 from selenium.webdriver import Chrome
 from time import sleep
 
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("http://demowebshop.tricentis.com/")
 sleep(2)
 products = ['14.1-inch Laptop']

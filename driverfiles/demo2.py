@@ -1,7 +1,7 @@
 from time import sleep
 
 from selenium.webdriver import Chrome
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 items = ['AAPL', 'AA', 'MSFT']
 while True:
     for item in items:

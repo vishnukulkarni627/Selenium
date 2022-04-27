@@ -3,7 +3,7 @@ from time import sleep
 from selenium.webdriver import Chrome, ActionChains
 from selenium.webdriver.common.keys import Keys
 
-driver = Chrome('./chromedriver.exe')
+driver = Chrome('../pytestTy/chromedriver.exe')
 driver.get("https://meesho.com/")
 act=driver.find_element_by_xpath("//input[@placeholder='Try Saree, Kurti or Search by Product Code']").send_keys("shoes")
 a = ActionChains(driver)

@@ -4,7 +4,7 @@ from selenium.webdriver.support.select import Select
 # /session
 # link for search engine
 # //button[@title='Search with Google or enter address']/div[.='Search with Google or enter address']
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("https://www.python.org/")
 sleep(2)
 driver.find_element_by_link_text("Downloads").click()

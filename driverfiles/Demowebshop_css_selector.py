@@ -1,6 +1,6 @@
 from selenium.webdriver import Chrome
 from time import sleep
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("http://demowebshop.tricentis.com/")
 sleep(5)
 driver.find_element_by_css_selector("a[class='ico-register']").click()

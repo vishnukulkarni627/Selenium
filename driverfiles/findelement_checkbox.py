@@ -4,7 +4,7 @@ from selenium.webdriver.support.select import Select
 # /session
 # link for search engine
 # //button[@title='Search with Google or enter address']/div[.='Search with Google or enter address']
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("file:///C:/Users/vishn/Downloads/demo-html/demo.html")
 # driver.find_element_by_xpath("(//input[@name='download'])[4]").click()
 # the above xpath has some drawback if dev changes to the html file we might be lead to failure of clicking python

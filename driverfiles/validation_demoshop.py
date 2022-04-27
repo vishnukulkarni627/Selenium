@@ -3,7 +3,7 @@ import csv
 from selenium.webdriver import Chrome
 from time import sleep
 
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("http://demowebshop.tricentis.com/")
 sleep(2)
 # virtual_gift_card=driver.find_element_by_xpath("(//span[@class='price actual-price'])[1]").text

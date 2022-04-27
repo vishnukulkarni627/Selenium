@@ -2,7 +2,7 @@ import re
 from time import sleep
 
 from selenium.webdriver import Chrome
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("https://services.smartbear.com/samples/TestComplete14/smartstore/newproducts")
 element_items = driver.find_elements_by_xpath("//h3[@class='art-name']/a/span")
 element_prices = driver.find_elements_by_xpath("//span[@class='art-price' or @class='art-price art-price--offer']")

@@ -4,7 +4,7 @@ from time import sleep
 import csv
 from selenium.webdriver.support.select import Select
 
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.maximize_window()
 driver.get("https://www.ajio.com/")
 sleep(5)

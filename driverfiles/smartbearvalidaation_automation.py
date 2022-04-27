@@ -7,7 +7,7 @@ import csv
 from selenium.webdriver.support.select import Select
 from reading_csv import read_
 
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.maximize_window()
 driver.get("https://services.smartbear.com/samples/TestComplete14/smartstore/newproducts/")
 sleep(5)

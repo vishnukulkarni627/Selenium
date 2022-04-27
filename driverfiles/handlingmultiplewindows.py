@@ -1,7 +1,7 @@
 from time import sleep
 
 from selenium.webdriver import Chrome
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("http://demowebshop.tricentis.com/")
 driver.find_element_by_xpath("//a[.='Twitter']").click()
 ids = driver.window_handles

@@ -4,7 +4,7 @@ from selenium.webdriver.support.select import Select
 # /session
 # link for search engine
 # //button[@title='Search with Google or enter address']/div[.='Search with Google or enter address']
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("file:///C:/Users/vishn/Downloads/demo-html/demo.html")
 # Findelement if no element are matched then returns No such element exception
 # Findelements if no element are matched then returns empty list

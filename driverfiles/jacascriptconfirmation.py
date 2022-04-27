@@ -1,6 +1,6 @@
 from time import sleep
 from selenium.webdriver import Chrome
-driver = Chrome("./chromedriver.exe")
+driver = Chrome("../pytestTy/chromedriver.exe")
 driver.get("file:///C:/Users/vishn/Downloads/demo-html/demo.html")
 sleep(2)
 driver.find_element_by_id("delete").click()
