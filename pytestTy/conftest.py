@@ -6,3 +6,4 @@ def _driver():
     driver.get("http://demowebshop.tricentis.com/")
     yield driver
     driver.close()
+

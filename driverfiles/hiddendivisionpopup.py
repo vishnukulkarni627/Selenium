@@ -22,7 +22,7 @@ driver.find_element_by_xpath(_xpathto).click()
 driver.find_element_by_xpath("//div[@class='flex flex-middle flex-between p-relative homeCalender']/button").click()
 sleep(5)
 _month = 'April 2022'
-_day = 22
+_day = 29
 for _ in range(12):
     try:
         _xpath2 = f"//div[.='{_month}']/../..//div[.='{_day}']"

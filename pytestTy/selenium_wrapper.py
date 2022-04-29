@@ -56,6 +56,7 @@ class SeleniumWrapper:
                 print(f"Could not find item {_item}")
 
 
+
 # s1 = SeleniumWrapper(driver)
 # s1.click_element(('link text', 'Register'))
 # s1.enter_text(("id", "FirstName"), value="hello")
