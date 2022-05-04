@@ -1,6 +1,8 @@
 from selenium.webdriver import Chrome
 from selenium_wrapper import SeleniumWrapper
 from pytest import mark
+from pytestTy._excel import read_locators
+from pom_design_pattern.homepage import Homepage
 from pom_design_pattern.registration_page import RegistrationPage
 headers = "gender, fname, lname, email, password, conpassword"
 data = [
@@ -11,15 +13,17 @@ data = [
 def test_registration(_driver, gender, fname, lname, email, password, conpassword):
     # driver = Chrome("chromedriver.exe")
     # driver.get("http://demowebshop.tricentis.com/")
-    s = SeleniumWrapper(_driver)
-    s.click_element(("link text", "Register"))
+    # s = SeleniumWrapper(_driver)
+    # s.click_element(("link text", "Register"))
+    hp = Homepage(_driver)
+    hp.home_click_register()
     rp = RegistrationPage(_driver)
-    if gender == 'Male':
-        rp.reg_select_male(gender)
+    if gender == "Male":
+        rp.reg_select_male()
         # s.click_element(("id", "gender-male"))
     elif gender == "female":
         # s.click_element(("id", "gender-female"))
-        rp.reg_select_female(gender)
+        rp.reg_select_female()
     else:
         raise Exception("Unknow Gender")
 
