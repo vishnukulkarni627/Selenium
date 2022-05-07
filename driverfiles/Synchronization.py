@@ -76,7 +76,7 @@ class SeleniumWrapper:
 
 
 s1 = SeleniumWrapper(driver)
-s1.click_element(('link text', 'Register'))
+# s1.click_element(('link text', 'Register'))
 s1.enter_text(("id", "FirstName"), value="hello")
 # s1.select_items(("id", "multiple_cars"), items=['Mercedes','Audi', 'Mini','BMW'])
 # s1.select_item(("id", "standard_cars"), item ="Audi")

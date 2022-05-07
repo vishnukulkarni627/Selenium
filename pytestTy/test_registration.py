@@ -4,12 +4,15 @@ from pytest import mark
 from pytestTy._excel import read_locators
 from pom_design_pattern.homepage import Homepage
 from pom_design_pattern.registration_page import RegistrationPage
-headers = "gender, fname, lname, email, password, conpassword"
-data = [
-    ("Male", "vishnu", "kulkarni", "vishnu.kulkarni@gmail.com","visu123", "visu123"),
-    ("female", "honey", "kulkarni", "honey.kulkarni@gmail.com","honey123", "honey123")
-]
-@mark.parametrize(headers, data)
+from pytestTy._excel import headers, data
+# headers = "gender, fname, lname, email, password, conpassword"
+# data = [
+#     ("Male", "vishnu", "kulkarni", "vishnu.kulkarni@gmail.com","visu123", "visu123"),
+#     ("female", "honey", "kulkarni", "honey.kulkarni@gmail.com","honey123", "honey123")
+# ]
+headers_=headers("smoke", "test_registration")
+data_=data("smoke", "test_registration")
+@mark.parametrize(headers_, data_)
 def test_registration(_driver, gender, fname, lname, email, password, conpassword):
     # driver = Chrome("chromedriver.exe")
     # driver.get("http://demowebshop.tricentis.com/")
@@ -25,7 +28,7 @@ def test_registration(_driver, gender, fname, lname, email, password, conpasswor
         # s.click_element(("id", "gender-female"))
         rp.reg_select_female()
     else:
-        raise Exception("Unknow Gender")
+        raise Exception("Unknown Gender")
 
     # s.enter_text(("id", "FirstName"), value = fname)
     rp.reg_enter_fname(fname)
