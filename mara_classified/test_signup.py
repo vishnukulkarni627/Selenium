@@ -1,12 +1,15 @@
 from mara_classified.homepage import Homepage
 from mara_classified.signup import Signup
 from pytest import mark
-headers = "Gender, Name, You_are_a, Your_country, phone, email, password, conpass"
-data = [
-    ("Mr", "vishnu", "Professional", "India", "1234568846", "vishnukulkarni1@gmail.com", "visu@1205", "visu@1205"),
-    ("Mrs", "honey", "Individual", "India", "5465845465", "vishnukulkarni2@gmail.com", "visu@212", "visu@212")
-]
-@mark.parametrize(headers, data)
+from mara_classified._excel import read_headers_signup, read_data_signup
+# headers = "Gender, Name, You_are_a, Your_country, phone, email, password, conpass"
+headers_signup = read_headers_signup("login_","test_signup")
+# data = [
+#     ("Mr", "vishnu", "Professional", "India", "1234568846", "vishnukulkarni1@gmail.com", "visu@1205", "visu@1205"),
+#     ("Mrs", "honey", "Individual", "India", "5465845465", "vishnukulkarni2@gmail.com", "visu@212", "visu@212")
+# ]
+data_signup = read_data_signup("login_", "test_signup")
+@mark.parametrize(headers_signup, data_signup)
 def test_signup(setup,Gender,Name,You_are_a,Your_country,phone,email,password,conpass):
     hp = Homepage(setup)
     hp.home_signup_button()
